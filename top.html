@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Église Sainte Rita de Wuiti - Communauté Chrétienne Catholique à Lomé, Togo</title>
+    
+    <!-- Meta Description optimisée -->
+    <meta name="description" content="Église Sainte Rita de Wuiti à Lomé, Togo. Communauté chrétienne catholique vibrante proposant messes, prières et activités paroissiales. Rejoignez-nous pour célébrer la foi.">
+    
+    <!-- Keywords SEO -->
+    <meta name="keywords" content="église sainte rita, wuiti, lomé, togo, paroisse catholique, messe, prière, communauté chrétienne, église togolaise, sainte rita de wuiti">
+    
+    <!-- Meta Author et géolocalisation -->
+    <meta name="author" content="Église Sainte Rita de Wuiti">
+    <meta name="geo.region" content="TG-L">
+    <meta name="geo.placename" content="Lomé">
+    <meta name="geo.position" content="6.166712;1.233814">
+    <meta name="ICBM" content="6.166712, 1.233814">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eglise-sainte-rita-wuiti.netlify.app/">
+    <meta property="og:title" content="Église Sainte Rita de Wuiti - Communauté Chrétienne à Lomé, Togo">
+    <meta property="og:description" content="Rejoignez la communauté chrétienne de l'Église Sainte Rita de Wuiti à Lomé pour des célébrations, prières et activités paroissiales.">
+    <meta property="og:image" content="https://image.noelshack.com/fichiers/2025/22/5/1748575787-499783337-1027131529552463-7182311396753938463-n.jpg">
+    <meta property="og:image:alt" content="Église Sainte Rita de Wuiti - Vue extérieure de notre église catholique">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://eglise-sainte-rita-wuiti.netlify.app/">
+    <meta property="twitter:title" content="Église Sainte Rita de Wuiti - Communauté Chrétienne">
+    <meta property="twitter:description" content="Rejoignez notre communauté chrétienne à Lomé pour des célébrations et activités paroissiales.">
+    <meta property="twitter:image" content="https://image.noelshack.com/fichiers/2025/22/5/1748575787-499783337-1027131529552463-7182311396753938463-n.jpg">
+    <meta property="twitter:image:alt" content="Église Sainte Rita de Wuiti - Vue extérieure de notre église catholique">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PlaceOfWorship",
+      "name": "Église Sainte Rita de Wuiti",
+      "description": "Église catholique située à Wuiti, Lomé, Togo",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Tokoin Wuiti",
+        "addressLocality": "Lomé",
+        "addressCountry": "TG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "6.166712",
+        "longitude": "1.233814"
+      },
+      "telephone": "+228-90522616",
+      "openingHours": "Mo-Su 05:00-20:00",
+      "url": "https://eglise-sainte-rita-wuiti.netlify.app/",
+      "sameAs": [
+        "https://facebook.com/paroisse.sainteritadetokoinwuiti",
+        "https://www.youtube.com/@paroissesainteritadetokoin6788"
+      ]
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.postimg.cc/kgkF1zBd/church-48dp-B89230-FILL0-wght200-GRAD0-opsz48.png" type="image/png">
+
+    <style>
+        :root {
+            --primary: #d97706;
+            --primary-dark: #b45309;
+            --secondary: #1e40af;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8f5f2;
+            color: #333333;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                       url('https://images.unsplash.com/photo-1544717305-2787409b809b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .event-card {
+            transition: all 0.3s ease;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            font-size: 28px;
+        }
+        
+        .menu-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .menu-link:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+        
+        .mobile-menu.active {
+            max-height: 500px;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #d97706, #b45309);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .saint-day {
+            background: linear-gradient(135deg, #fef3c7, #fcd34d);
+            border-radius: 12px;
+        }
+        
+        .service-card {
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border-top: 4px solid #d97706;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Logo 3D effect on mobile */
+        @media (max-width: 768px) {
+            .church-logo {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                transform: perspective(500px) rotateX(5deg);
+                display: inline-block;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                background-attachment: scroll;
+                padding-top: 120px;
+                padding-bottom: 60px;
+            }
+            
+            .connect-section {
+                padding: 60px 0;
+                overflow-x: hidden;
+            }
+            
+            .connect-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .form-container, .map-container {
+                padding: 20px;
+            }
+            
+            .map-iframe {
+                height: 250px;
+                width: 100%;
+            }
+            
+            /* Fix for inputs and buttons */
+            input, textarea, button {
+                width: 100% !important;
+                box-sizing: border-box;
+                font-size: 16px; /* Prevents iOS zoom */
+            }
+            
+            /* Responsive container */
+            .container {
+                padding-left: 16px;
+                padding-right: 16px;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+            /* Mobile menu button alignment */
+            .mobile-menu-btn {
+                margin-left: auto;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .connect-section .container {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+            
+            .form-container, .map-container {
+                padding: 12px;
+            }
+            
+            .heading-font {
+                font-size: 1.25rem;
+            }
+
+            /* Smaller text for mobile */
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-church text-3xl text-yellow-600 mr-2" aria-hidden="true"></i>
+                <a href="#" class="heading-font text-2xl font-bold text-gray-800 flex items-center church-logo">
+                    <span>Église Sainte Rita</span>
+                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full ml-2">Wuiti</span>
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8 items-center" role="navigation" aria-label="Menu principal">
+                <a href="#home" class="menu-link text-gray-700 hover:text-yellow-600 font-medium">Accueil</a>
+                <a href="#about" class="menu-link text-gray-700 hover:text-yellow-600 font-medium">À propos</a>
+                <a href="#bible" class="menu-link text-gray-700 hover:text-yellow-600 font-medium">La Parole</a>
+                <a href="#events" class="menu-link text-gray-700 hover:text-yellow-600 font-medium">Événements</a>
+                <a href="#connect" class="menu-link text-gray-700 hover:text-yellow-600 font-medium">Restez Connectés</a>
+            </nav>
+            
+            <!-- Mobile Menu Button - Corrected alignment -->
+            <div class="md:hidden flex items-center mobile-menu-btn">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none" aria-label="Ouvrir le menu">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white w-full">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="#home" class="text-gray-700 hover:text-yellow-600 font-medium py-2 border-b border-gray-100">Accueil</a>
+                <a href="#about" class="text-gray-700 hover:text-yellow-600 font-medium py-2 border-b border-gray-100">À propos</a>
+                <a href="#bible" class="text-gray-700 hover:text-yellow-600 font-medium py-2 border-b border-gray-100">La Parole</a>
+                <a href="#events" class="text-gray-700 hover:text-yellow-600 font-medium py-2 border-b border-gray-100">Événements</a>
+                <a href="#connect" class="text-gray-700 hover:text-yellow-600 font-medium py-2 border-b border-gray-100">Communauté</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero pt-32 pb-20 text-white flex items-center">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <span class="bg-yellow-600 bg-opacity-80 text-white px-4 py-1 rounded-full text-sm font-medium">Bienvenue à notre communauté</span>
+            </div>
+            <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Église <span class="gradient-text">Sainte Rita</span> <br>de Wuiti
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                Une communauté chrétienne vibrante à Lomé, Togo, dévouée à servir Dieu et à partager son amour avec tous.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#bible" class="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-3 rounded-full font-medium transition duration-300 flex items-center justify-center">
+                    <i class="fas fa-bible mr-2" aria-hidden="true"></i> Parole du Jour
+                </a>
+                <a href="#events" class="bg-white hover:bg-gray-100 text-yellow-600 px-8 py-3 rounded-full font-medium transition duration-300 flex items-center justify-center">
+                    <i class="fas fa-calendar-day mr-2" aria-hidden="true"></i> Événements
+                </a>
+            </div>
+            
+            <div class="mt-16">
+                <a href="#about" class="animate-bounce inline-block">
+                    <div class="w-10 h-10 border-2 border-yellow-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-chevron-down text-white" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-yellow-600 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="py-4">
+                    <div class="text-4xl font-bold mb-2 heading-font">30+</div>
+                    <div class="text-sm uppercase tracking-wider">Années d'Histoire</div>
+                </div>
+                <div class="py-4">
+                    <div class="text-4xl font-bold mb-2 heading-font">4</div>
+                    <div class="text-sm uppercase tracking-wider">Messes Hebdomadaires</div>
+                </div>
+                <div class="py-4">
+                    <div class="text-4xl font-bold mb-2 heading-font">200+</div>
+                    <div class="text-sm uppercase tracking-wider">Fidèles</div>
+                </div>
+                <div class="py-4">
+                    <div class="text-4xl font-bold mb-2 heading-font">12</div>
+                    <div class="text-sm uppercase tracking-wider">Ministères</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Notre Histoire et Mission</h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Découvrez l'histoire inspirante de notre communauté et notre engagement envers la foi et le service</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10 relative">
+                    <img src="https://image.noelshack.com/fichiers/2025/22/5/1748575787-499783337-1027131529552463-7182311396753938463-n.jpg" alt="Église Sainte Rita de Wuiti à Lomé - Vue extérieure de notre église catholique" class="rounded-lg shadow-xl w-full" loading="lazy">
+                    <div class="absolute -bottom-5 -right-5 bg-yellow-600 text-white p-4 rounded-lg shadow-lg hidden md:block">
+                        <div class="text-3xl font-bold heading-font">Depuis 1985</div>
+                        <div class="text-sm">Au service de la communauté</div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="heading-font text-2xl md:text-3xl font-bold text-gray-800 mb-4">Bienvenue à l'Église Sainte Rita</h3>
+                        <p class="text-gray-600 mb-4">
+                            Fondée en 1985, l'Église Sainte Rita est un lieu de culte dynamique situé au cœur du quartier Wuiti à Lomé. Depuis plus de trois décennies, nous avons servi notre communauté avec foi, compassion et engagement.
+                        </p>
+                        <p class="text-gray-600 mb-6">
+                            Notre église est dédiée à Sainte Rita, la sainte des causes désespérées et des situations impossibles. Nous croyons fermement en la puissance de la prière et en l'intercession des saints.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="flex items-start">
+                                <div class="feature-icon">
+                                    <i class="fas fa-cross" aria-hidden="true"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold text-gray-800 text-lg mb-1">Notre Vision</h4>
+                                    <p class="text-gray-600 text-sm">Être un phare spirituel dans notre communauté, guidant les âmes vers le Christ.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="feature-icon">
+                                    <i class="fas fa-hands-praying" aria-hidden="true"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold text-gray-800 text-lg mb-1">Nos Valeurs</h4>
+                                    <p class="text-gray-600 text-sm">Foi, Charité, Espérance, Compassion, Intégrité et Service.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                            <a href="#connect" class="inline-block border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-600 hover:text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                                Rejoignez notre communauté
+                            </a>
+                            <a href="https://fr.wikipedia.org/wiki/Sainte_Rita" target="_blank" rel="noopener" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-2 rounded-full font-medium transition duration-300">
+                                <i class="fas fa-book mr-1" aria-hidden="true"></i> En savoir plus sur Sainte Rita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- La Parole du Jour Section -->
+    <section id="bible" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">La Parole du Jour</h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Nourrissez votre âme chaque jour par les Écritures</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Verset du jour -->
+                <div class="md:col-span-2 bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-200">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-bible text-3xl text-yellow-600 mr-4" aria-hidden="true"></i>
+                        <div>
+                            <h3 class="heading-font text-xl font-bold text-gray-800">Verset à méditer</h3>
+                            <p class="text-gray-500 text-sm" id="bible-date">Mercredi 22 mai 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold text-gray-700 mb-2" id="bible-reference">Chargement...</h4>
+                        <p class="text-gray-700 italic text-lg leading-relaxed" id="bible-text">
+                            <i class="fas fa-spinner fa-spin text-yellow-600" aria-hidden="true"></i> Chargement de la lecture du jour...
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <button onclick="shareVerse()" class="bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-full text-sm font-medium">
+                            <i class="fas fa-share-alt mr-1" aria-hidden="true"></i> Partager
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Horaires condensés + Saint du jour -->
+                <div class="space-y-6">
+                    <!-- Saint du jour -->
+                    <div class="saint-day bg-gradient-to-br from-yellow-50 to-yellow-100 border border-yellow-200 p-6 rounded-xl">
+                        <h3 class="heading-font text-xl font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-star text-yellow-600 mr-2" aria-hidden="true"></i> date de consécration
+                        </h3>
+                        <h4 class="font-bold text-lg mb-1" id="saint-name-desktop">Chargement...</h4>
+                        <p class="text-gray-600 text-sm mb-2" id="saint-description-desktop"></p>
+                        <div class="text-yellow-700 text-sm font-medium">
+                            Fête le <span id="saint-date-desktop">...</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Horaires condensés -->
+                    <div class="bg-gray-800 text-white p-6 rounded-xl">
+                        <h3 class="heading-font text-xl font-bold mb-4 flex items-center">
+                            <i class="fas fa-clock text-yellow-400 mr-3" aria-hidden="true"></i> Horaires des Messes
+                        </h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex justify-between">
+                                <span class="font-medium">Dimanche</span>
+                                <span>6h, 8h, 11h, 18h</span>
+                            </li>
+                            <li class="flex justify-between border-t border-gray-700 pt-3">
+                                <span class="font-medium">Samedi</span>
+                                <span>6h30</span>
+                            </li>
+                            <li class="flex justify-between border-t border-gray-700 pt-3">
+                                <span class="font-medium">Semaine</span>
+                                <span>5h45</span>
+                            </li>
+                            <li class="flex justify-between border-t border-gray-700 pt-3">
+                                <span class="font-medium">(jeudi)adoration</span>
+                                <span>18h30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section class="bg-gradient-to-r from-yellow-600 to-yellow-700 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Annonces Importantes</h2>
+                <div class="w-24 h-1 bg-white mx-auto opacity-80"></div>
+                <p class="text-yellow-100 mt-4 max-w-2xl mx-auto">Restez informés des dernières actualités de notre paroisse</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Annonce 1 - Urgente -->
+                <div class="bg-white bg-opacity-95 text-gray-800 p-6 rounded-xl shadow-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 rounded-bl-lg text-xs font-bold">
+                        <i class="fas fa-exclamation-triangle mr-1" aria-hidden="true"></i> URGENT
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-center mb-2">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-bullhorn text-red-600 text-sm" aria-hidden="true"></i>
+                            </div>
+                            <span class="text-xs text-gray-500">Publié le 12 juillet 2025</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Changement d'horaire exceptionnel</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            En raison des travaux de rénovation, la messe du dimanche 20 juillet à 8h00 est reportée à 9h00.
+                        </p>
+                        <div class="flex items-center text-xs text-gray-500">
+                            <i class="fas fa-calendar-alt mr-1" aria-hidden="true"></i>
+                            <span>Dimanche 20 juillet</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Annonce 2 - Normale -->
+                <div class="bg-white bg-opacity-95 text-gray-800 p-6 rounded-xl shadow-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-500 text-white px-3 py-1 rounded-bl-lg text-xs font-bold">
+                        <i class="fas fa-info-circle mr-1" aria-hidden="true"></i> INFO
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-center mb-2">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-heart text-blue-600 text-sm" aria-hidden="true"></i>
+                            </div>
+                            <span class="text-xs text-gray-500">Publié le 10 juillet 2025</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Collecte pour les familles nécessiteuses</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            Organisée par le groupe de charité, collecte de vivres et vêtements jusqu'au 25 juillet.
+                        </p>
+                        <div class="flex items-center text-xs text-gray-500">
+                            <i class="fas fa-users mr-1" aria-hidden="true"></i>
+                            <span>Groupe de charité</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Annonce 3 - Événement -->
+                <div class="bg-white bg-opacity-95 text-gray-800 p-6 rounded-xl shadow-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-green-500 text-white px-3 py-1 rounded-bl-lg text-xs font-bold">
+                        <i class="fas fa-calendar-star mr-1" aria-hidden="true"></i> ÉVÉNEMENT
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-center mb-2">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-music text-green-600 text-sm" aria-hidden="true"></i>
+                            </div>
+                            <span class="text-xs text-gray-500">Publié le 8 juillet 2025</span>
+                        </div>
+                        <h3 class="formbold-text-lg mb-2">Concert de gospel</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            Grande soirée musicale avec la chorale de Sainte Rita et des invités spéciaux.
+                        </p>
+                        <div class="flex items-center text-xs text-gray-500">
+                            <i class="fas fa-clock mr-1" aria-hidden="true"></i>
+                            <span>Samedi 27 juillet - 19h00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Voir toutes les annonces -->
+            <div class="text-center mt-8">
+                <a href="annonce.html" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-yellow-700 bg-white hover:bg-gray-100 transition duration-300">
+                    <i class="fas fa-list mr-2" aria-hidden="true"></i> Voir toutes les annonces
+                </a>
+            </div>
+            <br>
+            
+            <!-- Bandeau d'annonce défilant -->
+            <div class="bg-white bg-opacity-20 rounded-xl p-4 overflow-hidden">
+                <div class="flex items-center">
+                    <div class="bg-white bg-opacity-30 p-2 rounded-full mr-4">
+                        <i class="fas fa-volume-up text-white" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="marquee-container">
+                            <div class="marquee-text">
+                                <span class="font-semibold">📢 RAPPEL IMPORTANT :</span>
+                                <span class="mx-4">•</span>
+                                <span>Inscriptions ouvertes pour la retraite spirituelle du 15-17 août</span>
+                                <span class="mx-4">•</span>
+                                <span>Nouveau groupe de prière pour les jeunes - Tous les vendredis à 18h</span>
+                                <span class="mx-4">•</span>
+                                <span>Formation biblique pour adultes - Inscriptions au secrétariat</span>
+                                <span class="mx-8">📢 RAPPEL IMPORTANT :</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Événements à Venir</h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Découvrez les prochains temps forts de notre communauté paroissiale</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="event-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative h-56">
+                        <img src="https://image.noelshack.com/fichiers/2025/22/5/1748575896-notre-dame-de-l-assomption.jpeg" alt="Fête de l'Assomption à l'Église Sainte Rita de Wuiti" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute top-4 right-4 bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow">29 MAI</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="heading-font text-xl font-bold text-gray-800">Fête de l'Assomption</h3>
+                            <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">Fête Mariale</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Célébration de l'élévation de la Vierge Marie au ciel, corps et âme. Messe solennelle suivie d'une procession mariale.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="event-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative h-56">
+                        <img src="https://image.noelshack.com/fichiers/2025/22/5/1748593697-pentecoste.jpeg" alt="Célébration de la Pentecôte à l'Église Sainte Rita de Wuiti" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute top-4 right-4 bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow">15 JUIN</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="heading-font text-xl font-bold text-gray-800">Fête de la Pentecôte</h3>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">Grande Fête</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Célébration de la venue du Saint-Esprit sur les apôtres. Messe spéciale avec renouvellement des promesses du baptême.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="event-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative h-56">
+                        <img src="https://image.noelshack.com/fichiers/2025/23/2/1748968717-sant-ssima-trindade-nas-escritura.jpeg" alt="Fête de la Sainte Trinité à l'Église Sainte Rita de Wuiti" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute top-4 right-4 bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow">15 JUIN</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="heading-font text-xl font-bold text-gray-800">Fête de la Sainte Trinité</h3>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">Dogme</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Célébration du mystère central de la faith chrétienne : un seul Dieu en trois personnes. Enseignement spécial après la messe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Calendar of upcoming events -->
+            <div class="mt-16">
+                <h3 class="heading-font text-2xl font-bold text-center text-gray-800 mb-8">Calendrier des Prochains Événements</h3>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+                        <!-- Upcoming Event 1 -->
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <div class="bg-yellow-600 text-white px-4 py-2">
+                                <div class="font-bold">22 Mai 2025</div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-bold text-gray-800 mb-2">Veillée de Prière</h4>
+                                <p class="text-gray-600 text-sm mb-3">Veillée de prière pour les familles. Thème: "La famille, sanctuaire de l'amour".</p>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-clock mr-1" aria-hidden="true"></i>
+                                    <span>20h00 - 22h00</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Upcoming Event 2 -->
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <div class="bg-yellow-600 text-white px-4 py-2">
+                                <div class="font-bold">1 Juin 2025</div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-bold text-gray-800 mb-2">Fête-Dieu</h4>
+                                <p class="text-gray-600 text-sm mb-3">Procession du Saint-Sacrement dans les rues de Wuiti.</p>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-clock mr-1" aria-hidden="true"></i>
+                                    <span>15h00 - Départ de l'église</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Saint of the day -->
+                        <div class="saint-day border border-yellow-200 rounded-lg overflow-hidden">
+                            <div class="bg-yellow-700 text-white px-4 py-2">
+                                <div class="font-bold">Saint du Jour</div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-bold text-gray-800 mb-2" id="saint-name">Saint Yves</h4>
+                                <p class="text-gray-600 text-sm mb-3" id="saint-description">Prêtre et juriste breton, défenseur des pauvres († 1303).</p>
+                                <div class="text-sm text-yellow-800 font-medium">
+                                    Fête le 19 mai
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Priests Section -->
+    <section class="py-10 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nos Prêtres</h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Rencontrez nos prêtres dévoués au service de la communauté</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Curé -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative h-64">
+                        <img src="https://image.noelshack.com/minis/2025/38/4/1758225180-14-200-priest-ilustraciones-de-stock-gr-ficos-vectoriales-libres-de-derechos-y-clip-art-istock.png" alt="Père Jean-Baptiste KOKOU - Curé de la Paroisse Sainte Rita de Wuiti" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-bold text-xl">Père Jean-Baptiste KOKOU</h3>
+                            <p class="text-yellow-400 font-medium">Curé de la Paroisse</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Père Jean-Baptiste guide notre communauté avec sagesse et compassion depuis 2018.</p>
+                    </div>
+                </div>
+                
+                <!-- Vicaire -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative h-64">
+                        <img src="https://image.noelshack.com/minis/2025/38/4/1758225180-14-200-priest-ilustraciones-de-stock-gr-ficos-vectoriales-libres-de-derechos-y-clip-art-istock.png" alt="Père Michel ADOLO - Vicaire de la Paroisse Sainte Rita de Wuiti" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-bold text-xl">Père Michel ADOLO</h3>
+                            <p class="text-yellow-400 font-medium">Vicaire</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Père Michel assiste le curé dans ses fonctions pastorales et s'occupe particulièrement de la catéchèse.</p>
+                    </div>
+                </div>
+                
+                <!-- Vicaire 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative h-64">
+                        <img src="https://image.noelshack.com/minis/2025/38/4/1758225180-14-200-priest-ilustraciones-de-stock-gr-ficos-vectoriales-libres-de-derechos-y-clip-art-istock.png" alt="Père Thomas AGBODJAN - Vicaire de la Paroisse Sainte Rita de Wuiti" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-bold text-xl">Père Thomas AGBODJAN</h3>
+                            <p class="text-yellow-400 font-medium">Vicaire</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Père Thomas est responsable des activités de jeunesse et des groupes de prière.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restez Connectés Section -->
+    <section id="connect" class="py-20 bg-gradient-to-b from-yellow-600 to-yellow-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Restez Connectés</h2>
+                <div class="w-24 h-1 bg-white mx-auto opacity-80"></div>
+                <p class="text-yellow-100 mt-4 max-w-2xl mx-auto">Votre foi grandit chaque jour, notre site évolue avec vous</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Formulaire de contact -->
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm border border-white border-opacity-20">
+                    <h3 class="heading-font text-2xl font-bold mb-6 text-center">Contactez-nous</h3>
+                    <form id="contactForm" method="POST" action="https://formspree.io/f/xpwjvwwn" class="space-y-4" role="form" aria-labelledby="contact-heading">
+                        <div>
+                            <label for="name" class="block text-white font-medium mb-2">Nom :</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                required
+                                class="w-full px-4 py-2 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70"
+                                placeholder="Votre nom"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-white font-medium mb-2">Email :</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                                class="w-full px-4 py-2 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70"
+                                placeholder="Votre email"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-white font-medium mb-2">Message :</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                rows="5"
+                                required
+                                class="w-full px-4 py-2 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70"
+                                placeholder="Votre message"
+                            ></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="w-full bg-white text-yellow-700 font-bold py-3 px-6 rounded-full hover:bg-yellow-100 transition duration-300 flex items-center justify-center"
+                        >
+                            <i class="fas fa-paper-plane mr-2" aria-hidden="true"></i> Envoyer
+                        </button>
+                    </form>
+                    <p id="status" class="mt-3 text-center"></p>
+                </div>
+
+                <!-- Carte Google Maps -->
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm border border-white border-opacity-20">
+                    <h3 class="heading-font text-2xl font-bold mb-6 text-center">Nous Trouver</h3>
+                    <div class="w-full rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7314025980572!2d1.2338144661453379!3d6.166712327593824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023e23c25684575%3A0x6c75b450dbf133e2!2sParoisse%20Sainte%20Rita%20Nukafu!5e0!3m2!1sfr!2stg!4v1758228827280!5m2!1sfr!2stg"
+                            class="w-full h-96 rounded-lg"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Carte de localisation de l'Église Sainte Rita de Wuiti à Lomé, Togo"
+                        ></iframe>
+                    </div>
+                    <p class="text-center mt-4 text-white text-opacity-90">
+                        Retrouvez facilement notre église grâce à la carte interactive ci-dessus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 pt-12">
+        <div class="container mx-auto px-6">
+            <!-- Grille principale -->
+            <div class="grid md:grid-cols-4 gap-12">
+                <!-- Logo et description -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-church text-3xl text-yellow-600 mr-3" aria-hidden="true"></i>
+                        <span class="heading-font text-2xl font-bold text-white">Église Sainte Rita</span>
+                    </div>
+                    <p class="text-sm leading-relaxed mb-6">
+                        Une communauté chrétienne vibrante, unie dans la prière et le service de Dieu et des hommes.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com/paroisse.sainteritadetokoinwuiti" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-yellow-500 transition transform hover:scale-110">
+                            <i class="fab fa-facebook-f text-lg" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="https://www.youtube.com/@paroissesainteritadetokoin6788" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-yellow-500 transition transform hover:scale-110">
+                            <i class="fab fa-youtube text-lg" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Liens rapides -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-lg">Liens rapides</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#home" class="hover:text-yellow-500 transition">Accueil</a></li>
+                        <li><a href="#bible" class="hover:text-yellow-500 transition">La Parole du Jour</a></li>
+                        <li><a href="#events" class="hover:text-yellow-500 transition">Événements</a></li>
+                        <li><a href="#connect" class="hover:text-yellow-500 transition">Restez Connectés</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-lg">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-yellow-500 transition">Messes</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition">Catéchèse</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition">Mariages</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition">Baptêmes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-lg">Contact</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-yellow-500 mr-3 mt-1" aria-hidden="true"></i>
+                            <a href="mailto:danielbakar4@gmail.com" class="hover:text-yellow-500 transition">danielbakar4@gmail.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-yellow-500 mr-3 mt-1" aria-hidden="true"></i>
+                            <span>1 Tokoin Wuiti, Lomé, Togo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-yellow-500 mr-3 mt-1" aria-hidden="true"></i>
+                            <a href="tel:+22890522616" class="hover:text-yellow-500 transition">+228 90 52 26 16</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bas du footer -->
+            <div class="border-t border-gray-800 mt-12 pt-6 text-center">
+                <p class="text-xs text-gray-500">
+                    &copy; 2025 Église Sainte Rita de Wuiti. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion du menu mobile
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        });
+
+        // Bible du jour (exemple avec quelques versets)
+        const dailyVerses = [
+            {
+                date: "2025-05-22",
+                reference: "Jean 15:1-8",
+                text: "« Je suis la vraie vigne, et mon Père est le vigneron. Tout sarment qui est en moi, mais qui ne porte pas de fruit, mon Père l'enlève ; tout sarment qui porte du fruit, il le purifie en le taillant, pour qu'il en porte davantage. »"
+            },
+            {
+                date: "2025-05-23",
+                reference: "Matthieu 5:13-16",
+                text: "« Vous êtes le sel de la terre. Mais si le sel perd sa saveur, avec quoi la lui rendra-t-on ? Vous êtes la lumière du monde. Une ville située sur une montagne ne peut être cachée. »"
+            }
+        ];
+
+        // Saints du jour
+        const saints = [
+            { name: "Saint Yves", description: "Prêtre et juriste breton, défenseur des pauvres († 1303).", date: "19 mai" },
+            { name: "Saint Bernardin de Sienne", description: "Prêtre franciscain, prédicateur († 1444).", date: "20 mai" },
+            { name: "Sainte Rita", description: "Religieuse augustine, patronne des causes désespérées († 1457).", date: "22 mai" }
+        ];
+
+        function updateDailyContent() {
+            const today = new Date();
+            const todayStr = today.toISOString().split('T')[0];
+            
+            // Verset biblique
+            const verse = dailyVerses.find(v => v.date === todayStr) || dailyVerses[0];
+            document.getElementById('bible-reference').textContent = verse.reference;
+            document.getElementById('bible-text').textContent = verse.text;
+            
+            // Formatage de la date en français
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('bible-date').textContent = today.toLocaleDateString('fr-FR', options);
+            
+            // Saint du jour
+            const dayIndex = today.getDate() % saints.length;
+            const saint = saints[dayIndex];
+            
+            document.getElementById('saint-name').textContent = saint.name;
+            document.getElementById('saint-description').textContent = saint.description;
+            document.getElementById('saint-name-desktop').textContent = saint.name;
+            document.getElementById('saint-description-desktop').textContent = saint.description;
+            document.getElementById('saint-date-desktop').textContent = saint.date;
+        }
+
+        // Partage du verset
+        function shareVerse() {
+            const verse = document.getElementById('bible-reference').textContent;
+            const text = document.getElementById('bible-text').textContent;
+            const shareText = `${verse} - ${text}\n\n(Partagé via Église Sainte Rita de Wuiti)`;
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Parole du Jour',
+                    text: shareText,
+                    url: window.location.href
+                }).catch(err => {
+                    console.log('Erreur de partage:', err);
+                    fallbackShare(shareText);
+                });
+            } else {
+                fallbackShare(shareText);
+            }
+        }
+
+        function fallbackShare(shareText) {
+            const encodedText = encodeURIComponent(shareText);
+            const whatsappUrl = `https://wa.me/?text=${encodedText}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Animation du défilement des annonces
+        function setupMarquee() {
+            const marqueeText = document.querySelector('.marquee-text');
+            if (marqueeText) {
+                const containerWidth = marqueeText.parentElement.offsetWidth;
+                const textWidth = marqueeText.offsetWidth;
+                
+                marqueeText.innerHTML += marqueeText.innerHTML;
+                
+                const duration = Math.max(20, textWidth / 50);
+                marqueeText.style.animationDuration = `${duration}s`;
+            }
+        }
+
+        // Gestion du formulaire de contact
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+            let status = document.getElementById("status");
+
+            // Validation simple
+            if (name.length < 3) {
+                status.textContent = "Le nom doit contenir au moins 3 caractères.";
+                status.className = "text-red-300";
+                return;
+            }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                status.textContent = "Adresse email invalide.";
+                status.className = "text-red-300";
+                return;
+            }
+            if (message.length < 10) {
+                status.textContent = "Le message doit contenir au moins 10 caractères.";
+                status.className = "text-red-300";
+                return;
+            }
+
+            status.textContent = "Envoi en cours…";
+            status.className = "text-yellow-300";
+
+            // Envoi avec Formspree via fetch
+            fetch(this.action, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json"
+                },
+                body: new FormData(this)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    status.textContent = "Merci ! Votre message a été envoyé avec succès.";
+                    status.className = "text-green-300";
+                    this.reset();
+                } else {
+                    status.textContent = "Oops, une erreur est survenue. Veuillez réessayer.";
+                    status.className = "text-red-300";
+                }
+            })
+            .catch(() => {
+                status.textContent = "Erreur réseau. Vérifiez votre connexion et réessayez.";
+                status.className = "text-red-300";
+            });
+        });
+
+        // Exécuter après le chargement de la page
+        window.addEventListener('load', function() {
+            setupMarquee();
+            updateDailyContent();
+        });
+    </script>
+</body>
+</html>
