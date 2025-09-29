@@ -1108,3 +1108,301 @@
     </script>
 </body>
 </html>
+
+
+annonce.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toutes les annonces – Église Sainte Rita de Wuiti</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="icon" href="https://i.postimg.cc/kgkF1zBd/church-48dp-B89230-FILL0-wght200-GRAD0-opsz48.png" type="image/png">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #d97706, #b45309, #92400e);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 200% auto;
+      animation: gradient 8s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.2s ease-out;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://i.postimg.cc/J7TRd1Yw/Annonce-annonce-fond-Vecteur-Premium.jpg') center/cover;
+      opacity: 0.15;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
+      transition: all 0.15s ease-out;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .footer {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+  <!-- Section Hero -->
+  <section class="hero-section relative h-80 md:h-screen flex items-center justify-center text-center text-white" style="max-height: 500px;">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="relative px-4 z-10" data-aos="fade-up" data-aos-duration="800">
+      <h1 class="text-4xl md:text-6xl font-bold gradient-text mb-4">Toutes les annonces</h1>
+      <p class="mt-4 text-xl md:text-2xl max-w-2xl mx-auto">Restez informé des activités et événements de notre communauté paroissiale</p>
+    </div>
+  </section>
+
+  <!-- Section cartes annonces -->
+  <main class="container mx-auto px-4 py-16 md:py-24">
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Carte 1 -->
+      <div class="card shadow-xl" data-aos="fade-up" data-aos-delay="100">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <div class="bg-yellow-100 text-yellow-800 p-3 rounded-full mr-4">
+              <i class="fas fa-music text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-yellow-800">Concert de louange</h3>
+          </div>
+          <p class="text-gray-700 mb-6">Rejoignez-nous pour une soirée exceptionnelle de louange et d'adoration avec notre chorale paroissiale et des invités spéciaux.</p>
+          <div class="flex justify-between items-center text-sm">
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-calendar-alt mr-2"></i> 21 septembre 2025
+            </div>
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-clock mr-2"></i> 18h00
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 2 -->
+      <div class="card shadow-xl" data-aos="fade-up" data-aos-delay="200">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <div class="bg-blue-100 text-blue-800 p-3 rounded-full mr-4">
+              <i class="fas fa-users text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-blue-800">Réunion des jeunes</h3>
+          </div>
+          <p class="text-gray-700 mb-6">Rencontre fraternelle pour les 15-25 ans avec partages bibliques, témoignages et temps de prière. Buffet offert.</p>
+          <div class="flex justify-between items-center text-sm">
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-calendar-alt mr-2"></i> 19 septembre 2025
+            </div>
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-clock mr-2"></i> 20h00
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 3 -->
+      <div class="card shadow-xl" data-aos="fade-up" data-aos-delay="300">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <div class="bg-green-100 text-green-800 p-3 rounded-full mr-4">
+              <i class="fas fa-hands-helping text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-green-800">Collecte solidaire</h3>
+          </div>
+          <p class="text-gray-700 mb-6">Collecte de vêtements, denrées non périssables et produits d'hygiène pour les familles démunies de notre quartier.</p>
+          <div class="flex justify-between items-center text-sm">
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-calendar-alt mr-2"></i> 22 septembre 2025
+            </div>
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-clock mr-2"></i> Après la messe
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 4 -->
+      <div class="card shadow-xl" data-aos="fade-up" data-aos-delay="400">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <div class="bg-purple-100 text-purple-800 p-3 rounded-full mr-4">
+              <i class="fas fa-book-bible text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-purple-800">Formation biblique</h3>
+          </div>
+          <p class="text-gray-700 mb-6">Cycle de 5 sessions sur les Évangiles synoptiques animé par le Père Martin. Ouvert à tous, débutants bienvenus.</p>
+          <div class="flex justify-between items-center text-sm">
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-calendar-alt mr-2"></i> 23 septembre 2025
+            </div>
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-clock mr-2"></i> 19h00
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 5 -->
+      <div class="card shadow-xl" data-aos="fade-up" data-aos-delay="500">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <div class="bg-red-100 text-red-800 p-3 rounded-full mr-4">
+              <i class="fas fa-baby text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-red-800">Baptêmes 2025</h3>
+          </div>
+          <p class="text-gray-700 mb-6">Préparation au baptême pour les enfants de moins de 3 ans. Première réunion d'information pour les parents.</p>
+          <div class="flex justify-between items-center text-sm">
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-calendar-alt mr-2"></i> 25 septembre 2025
+            </div>
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-clock mr-2"></i> 20h30
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carte 6 bis -->
+      <div class="card shadow-xl" data-aos="fade-up" data-aos-delay="500">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <div class="bg-red-100 text-red-800 p-3 rounded-full mr-4">
+              <i class="fas fa-baby text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-red-800">promesse de marriage</h3>
+          </div>
+          <p class="text-gray-700 mb-6">promesse de mariage entre bakar et barrigah 
+          <div class="flex justify-between items-center text-sm">
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-calendar-alt mr-2"></i> 25 septembre 2040
+            </div>
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-clock mr-2"></i> 14h30
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 7 -->
+      <div class="card shadow-xl" data-aos="fade-up" data-aos-delay="600">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <div class="bg-indigo-100 text-indigo-800 p-3 rounded-full mr-4">
+              <i class="fas fa-church text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-indigo-800">Pèlerinage annuel</h3>
+          </div>
+          <p class="text-gray-700 mb-6">Inscriptions ouvertes pour notre pèlerinage à Lourdes du 15 au 22 octobre. Places limitées.</p>
+          <div class="flex justify-between items-center text-sm">
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-calendar-alt mr-2"></i> 30 septembre 2025
+            </div>
+            <div class="flex items-center text-gray-500">
+              <i class="fas fa-clock mr-2"></i> 18h00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bouton retour -->
+    <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="700">
+      <a href="index.html" class="btn-primary inline-flex items-center px-8 py-4 text-white font-semibold rounded-full transition duration-300">
+        <i class="fas fa-arrow-left mr-3"></i> Retour à l'accueil
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer py-12 mt-12 text-center">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-xl font-bold text-white mb-2">Église Sainte Rita de Wuiti</h3>
+          <p class="text-gray-300">12 Rue de la Paix, 75000 Paris</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="facebook.com/paroisse.sainteritadetokoinwuiti" class="text-gray-300 hover:text-white transition">
+            <i class="fab fa-facebook-f text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-300 hover:text-white transition">
+            <i class="fab fa-instagram text-xl"></i>
+          </a>
+          <a href="https://www.youtube.com/@paroissesainteritadetokoin6788" class="text-gray-300 hover:text-white transition">
+            <i class="fab fa-youtube text-xl"></i>
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-gray-400 text-sm">
+        © 2025 Église Sainte Rita de Wuiti – Tous droits réservés
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init({
+      duration: 400,
+      easing: 'ease-out',
+      once: true,
+      offset: 120
+    });
+  </script>
+
+</body>
+</html>
+
